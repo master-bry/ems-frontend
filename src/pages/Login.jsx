@@ -11,7 +11,7 @@ import React from 'react';
 
     const onSubmit = async (data) => {
       try {
-        const response = await login(data);
+        await login(data);
         setUser({ username: data.username });
         navigate('/dashboard');
       } catch (error) {
