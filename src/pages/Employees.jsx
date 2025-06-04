@@ -2,7 +2,7 @@ import React from 'react';
   import { useQuery, useMutation, useQueryClient } from '@tanstack/react-query';
   import { getAllEmployees, createEmployee, updateEmployee, deleteEmployee } from '../services/employee';
   import { getAllDepartments } from '../services/department';
-  import EmployeeForm from '../components/EmployeeForm';
+  import EmployeeForm from '../Components/EmployeeForm';
   import { Link } from 'react-router-dom';
 
   const Employees = () => {

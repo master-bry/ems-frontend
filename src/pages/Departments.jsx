@@ -1,7 +1,7 @@
 import React from 'react';
   import { useQuery, useMutation, useQueryClient } from '@tanstack/react-query';
   import { getAllDepartments, createDepartment, updateDepartment, deleteDepartment } from '../services/department';
-  import DepartmentForm from '../components/DepartmentForm';
+  import DepartmentForm from '../Components/DepartmentForm';
 
   const Departments = () => {
     const queryClient = useQueryClient();

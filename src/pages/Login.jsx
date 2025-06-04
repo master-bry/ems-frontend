@@ -11,8 +11,9 @@ import React from 'react';
 
     const onSubmit = async (data) => {
       try {
-        await login(data);
-        setUser({ username: data.username });
+        const response = await login(data);
+        // Example: Use response data if it contains a token or user info
+        setUser({ username: data.username, ...response }); // Adjust based on response structure
         navigate('/dashboard');
       } catch (error) {
         alert('Login failed: ' + (error.response?.data?.message || error.message));
