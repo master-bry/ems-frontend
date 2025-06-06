@@ -51,14 +51,14 @@ const AdminRegister = () => {
           />
           {errors.roles && <p className="text-red-500">{errors.roles.message}</p>}
         </div>
-        <div className="mb-4">
+        {/* <div className="mb-4">
           <label className="block text-gray-700">Employee ID</label>
           <input
             type="number"
             {...register('employeeId')}
             className="w-full p-2 border rounded"
           />
-        </div>
+        </div> */}
         <button type="submit" className="w-full bg-blue-500 text-white p-2 rounded hover:bg-blue-600">Register User</button>
       </form>
     </div>
