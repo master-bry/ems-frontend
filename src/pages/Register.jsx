@@ -37,14 +37,14 @@ const Register = () => {
           />
           {errors.password && <p className="text-red-500">{errors.password.message}</p>}
         </div>
-        {/* <div className="mb-4">
+        <div className="mb-4">
           <label className="block text-gray-700">Employee ID (optional)</label>
           <input
             type="number"
             {...formRegister('employeeId')}
             className="w-full p-2 border rounded"
           />
-        </div> */}
+        </div>
         <button type="submit" className="w-full bg-blue-500 text-white p-2 rounded hover:bg-blue-600">Register</button>
       </form>
     </div>
